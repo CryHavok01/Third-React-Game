@@ -17,6 +17,8 @@ class Key extends React.Component {
           newMessage = "You grab the key and take it with you";
           let newItem = "Key";
           this.props.interactions.pickUp(newItem);
+      } else if (verb === "use") {
+          newMessage = "You can't use that";
       }
       this.props.changeMessage(newMessage);
   }
