@@ -15,6 +15,8 @@ class Bed extends React.Component {
         newMessage = "It doesn't look comfortable";
       } else if (verb === "pickUp") {
           newMessage = "It's too big to carry";
+      } else if (verb === "use") {
+          newMessage = "You can't use that";
       }
       this.props.changeMessage(newMessage);
   }
