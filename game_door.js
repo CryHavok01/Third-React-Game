@@ -18,6 +18,8 @@ class Door extends React.Component {
             newMessage = "It's a big heavy door, but now it's unlocked.";
           } else if (verb === "pickUp") {
               newMessage = "You can't pick that up";
+          } else if (verb === "use") {
+            newMessage = "You can't use that";
           }
       } else if (!this.props.interactStates.buttonPressed) {
         if (verb === "push") {
@@ -26,6 +28,8 @@ class Door extends React.Component {
             newMessage = "It's a big, heavy, locked door";
         } else if (verb === "pickUp") {
             newMessage = "You can't pick that up";
+        } else if (verb === "use") {
+          newMessage = "You can't use that";
         }
       }
       this.props.changeMessage(newMessage);
