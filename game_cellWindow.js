@@ -18,6 +18,8 @@ class CellWindow extends React.Component {
         this.props.interactions.buttonReveal();
       } else if (verb === "pickUp") {
           newMessage = "You can't pick that up";
+      } else if (verb === "use") {
+          newMessage = "You can't use that";
       }
       this.props.changeMessage(newMessage);
   }
