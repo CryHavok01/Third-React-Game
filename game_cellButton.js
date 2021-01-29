@@ -18,6 +18,8 @@ class CellButton extends React.Component {
         newMessage = "It's already been pressed in.  It does nothing now.";
       } else if (verb === "pickUp") {
           newMessage = "You can't pick that up.";
+      } else if (verb === "use") {
+          newMessage = "You can't use that";
       }
       this.props.changeMessage(newMessage);
   }
