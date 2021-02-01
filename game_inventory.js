@@ -12,9 +12,9 @@ class Inventory extends React.Component {
       const newMessage = '';
       if (verb === 'use') {
         newMessage = 'Use ' + newItem + ' with...';
+        this.props.changeMessage(newMessage);
       }
       this.props.changeItem(newItem);
-      this.props.changeMessage(newMessage);
   }
   
     render() {
