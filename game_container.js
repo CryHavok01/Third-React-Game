@@ -94,7 +94,7 @@ class Container extends React.Component {
         />
         <Display message={this.state.displayMessage} />
         <Buttons verb={this.state.verb} onClick={this.changeVerb} />
-        <Inventory inventory={this.state.inventory} changeItem={this.changeItem} />
+        <Inventory inventory={this.state.inventory} verb={this.state.verb} changeItem={this.changeItem} />
         <p>{this.state.verb}</p>
         <p>{this.state.item}</p>
       </div>
