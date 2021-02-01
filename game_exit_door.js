@@ -13,6 +13,7 @@ class Exit_Door extends React.Component {
         let item = this.props.item;
         if (verb === "use" && item === "Key") {
             newMessage = "You unlock the door and run to freedom!";
+            this.props.interactions.dropItem(item);
             this.props.changeRoom(newRoom);
         } else if (verb === "push") {
             newMessage = "The door is locked";
