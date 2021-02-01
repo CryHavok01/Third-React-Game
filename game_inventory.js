@@ -9,7 +9,7 @@ class Inventory extends React.Component {
   handleClick(e) {
       const newItem = (e.target.value);
       const verb = this.props.verb;
-      const newMessage = '';
+      let newMessage = '';
       if (verb === 'use') {
         newMessage = 'Use ' + newItem + ' with...';
         this.props.changeMessage(newMessage);
