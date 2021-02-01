@@ -24,9 +24,9 @@ class Container extends React.Component {
             this.setState({inventory: newInventory});
         },
         dropItem: (droppedItem) => {
-            let oldInventory = this.state.inventory;
-            let index = oldInventory.indexOf(droppedItem);
-            let newInventory = oldInventory.splice(index, 1);
+            let newInventory = this.state.inventory;
+            let index = newInventory.indexOf(droppedItem);
+            newInventory.splice(index, 1);
             this.setState({inventory: newInventory});
         },
         buttonReveal: () => {
