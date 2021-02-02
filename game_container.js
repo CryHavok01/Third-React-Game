@@ -13,6 +13,10 @@ class Container extends React.Component {
         interactStates: {
             buttonRevealed: false,
             buttonPressed: false,
+            keyBoxOpen: false,
+            toolCrateOpen: false,
+            carDoorOpen: false,
+            garageGateOpen: false
         },
         room: "start"
     };
@@ -34,7 +38,19 @@ class Container extends React.Component {
         },
         buttonPress: () => {
             this.setState({interactStates: {...this.state.interactStates, buttonPressed: true}});
-        }    
+        },
+        keyBoxOpen: () => {
+            this.setState({interactStates: {...this.state.interactStates, keyBoxOpen: true}});
+        },
+        toolCrateOpen: () => {
+            this.setState({interactStates: {...this.state.interactStates, toolCrateOpen: true}});
+        },
+        carDoorOpen: () => {
+            this.setState({interactStates: {...this.state.interactStates, carDoorOpen: true}});
+        },
+        garageGateOpen: () => {
+            this.setState({interactStates: {...this.state.interactStates, garageGateOpen: true}});
+        },
     };
     
     this.changeVerb = this.changeVerb.bind(this);
@@ -42,6 +58,10 @@ class Container extends React.Component {
     this.changeDisplayMessage = this.changeDisplayMessage.bind(this);
     this.interactions.buttonReveal = this.interactions.buttonReveal.bind(this);
     this.interactions.buttonPress = this.interactions.buttonPress.bind(this);
+    this.interactions.keyBoxOpen = this.interactions.keyBoxOpen.bind(this);
+    this.interactions.toolCrateOpen = this.interactions.toolCrateOpen.bind(this);
+    this.interactions.carDoorOpen = this.interactions.carDoorOpen.bind(this);
+    this.interactions.garageGateOpen = this.interactions.garageGateOpen.bind(this);
     this.changeRoom = this.changeRoom.bind(this);
     this.reset = this.reset.bind(this);
 
@@ -91,7 +111,7 @@ class Container extends React.Component {
             reset={this.reset}
             inventory={this.state.inventory}
             interactions={this.interactions}
-            interactStates = {this.state.interactStates}
+            interactStates={this.state.interactStates}
         />
         <Display message={this.state.displayMessage} />
         <Buttons verb={this.state.verb} onClick={this.changeVerb} />
