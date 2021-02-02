@@ -16,7 +16,7 @@ class Crate extends React.Component {
       } else if (verb === "pickUp") {
           newMessage = "You can't pick that up";
       } else if (verb === "use") {
-          newMessage = "With some effort, you swing the lid open.  Inside the crate are a few shovels, a bag of rock salt, various tools, and one crow bar.";
+          newMessage = "With some effort, you swing the lid open.  Inside the crate are a few shovels, a bag of rock salt, various tools, and one crowbar.";
       }
       this.props.changeMessage(newMessage);
   }
