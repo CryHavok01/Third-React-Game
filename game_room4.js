@@ -45,7 +45,7 @@ class Room4 extends React.Component {
           /> leading back down.
         </div>
       )
-    } else if {this.props.interactStates.toolCrateOpen && this.props.inventory.includes("Crowbar")) {
+    } else if (this.props.interactStates.toolCrateOpen && this.props.inventory.includes("Crowbar")) {
       return(
         <div>
           You are on the roof of the parking garage.  There is a <CopCar 
