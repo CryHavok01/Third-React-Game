@@ -13,7 +13,7 @@ class Room3 extends React.Component {
             interactStates={this.props.interactStates}
           />.  The gate blocking the <GarageExit 
               changeMessage={this.props.changeMessage}
-              changeRoom={this.props.changeRoom]
+              changeRoom={this.props.changeRoom}
           /> has lifted.  In the corner is a <Stairs 
             room={this.props.room}
             changeMessage={this.props.changeMessage}
