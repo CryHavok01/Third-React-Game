@@ -50,6 +50,6 @@ class Crate extends React.Component {
               Crate
             </button>
         </div>
-    )
+      )
   }
 }
