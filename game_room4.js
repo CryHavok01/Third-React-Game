@@ -28,7 +28,11 @@ class Room4 extends React.Component {
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions}
             interactStates={this.props.interactStates}
-          /> parked diagonally across three spaces with its door wide open.  On the dashboard of the car is an ID Card.  Against the far railing is an open tool <Crate 
+          /> parked diagonally across three spaces with its door wide open.  On the dashboard of the car is an <IDCard 
+            verb={this.props.verb}
+            changeMessage={this.props.changeMessage}
+            interactions={this.props.interactions}
+          />.  Against the far railing is an open tool <Crate 
             verb={this.props.verb}
             inventory={this.props.inventory}
             changeMessage={this.props.changeMessage}
