@@ -11,7 +11,7 @@ class CopCar extends React.Component {
       let item = this.props.item;
       let droppedItem = "Car Key";
       let newMessage = "";
-      if (this.props.inventory.includes("ID Card")) {
+      if (this.props.inventory.includes("ID Card") || this.props.interactStates.garageGateOpen) {
         if (verb === "push") {
           newMessage = "You try to push the car into a proper parking spot, but it's too heavy";    
         } else if (verb === "look") {
