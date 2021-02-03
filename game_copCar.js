@@ -9,6 +9,7 @@ class CopCar extends React.Component {
   handleClick() {
       let verb = this.props.verb;
       let item = this.props.item;
+      let droppedItem = "Car Key";
       let newMessage = "";
       if (this.props.inventory.includes("ID Card")) {
         if (verb === "push") {
@@ -40,6 +41,7 @@ class CopCar extends React.Component {
         } else if (verb === "use" && item === "Car Key") {
           newMessage = "The key unlocks the door and you sit in the drivers seat.  You slide the key into the ignition and turn it, but nothing happens.  The car is totally dead";
           this.props.interactions.carDoorOpen();
+          this.props.interactions.dropItem(droppedItem);
         } else if (verb === "use") {
           newMessage = "You try the door, but the car is locked";
         }
