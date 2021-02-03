@@ -8,6 +8,7 @@ class Room3 extends React.Component {
           You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is an empty metal <Box 
             verb={this.props.verb} 
             item={this.props.item}
+            inventory={this.props.inventory}
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions} 
             interactStates={this.props.interactStates}
@@ -24,7 +25,14 @@ class Room3 extends React.Component {
     } else if (this.props.interactStates.keyBoxOpen && this.props.inventory.includes("Car Key")) {
       return(
         <div>
-          You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is an empty metal box.  There is a metal <Gate 
+          You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is an empty metal <Box 
+            verb={this.props.verb} 
+            item={this.props.item}
+            inventory={this.props.inventory}
+            changeMessage={this.props.changeMessage}
+            interactions={this.props.interactions} 
+            interactStates={this.props.interactStates}
+          />.  There is a metal <Gate 
             verb={this.props.verb} 
             changeMessage={this.props.changeMessage}
           /> blocking the exit.  Next to the gate is a <CardReader 
@@ -45,6 +53,7 @@ class Room3 extends React.Component {
           You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is a metal <Box 
             verb={this.props.verb} 
             item={this.props.item}
+            inventory={this.props.inventory}
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions} 
             interactStates={this.props.interactStates}
@@ -73,6 +82,7 @@ class Room3 extends React.Component {
           You emerge into a parking garage.  There are a few parked cars scattered around.  Next to you is a closed metal <Box 
             verb={this.props.verb} 
             item={this.props.item}
+            inventory={this.props.inventory}
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions} 
             interactStates={this.props.interactStates}
