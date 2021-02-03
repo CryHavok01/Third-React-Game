@@ -9,7 +9,7 @@ class GarageExit extends React.Component {
   handleClick() {
       let newMessage;
       let newRoom = "win";
-        let newMessage = "You duck under the gate and head out of the garage, seeking your destiny.";
+        newMessage = "You duck under the gate and head out of the garage, seeking your destiny.";
         this.props.changeRoom(newRoom);
         this.props.changeMessage(newMessage);
   }
