@@ -5,7 +5,13 @@ class Room3 extends React.Component {
     if (this.props.interactStates.garageGateOpen) {
       return(
         <div>
-          You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is an empty metal box.  The gate blocking the exit has lifted.  In the corner is a <Stairs 
+          You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is an empty metal <Box 
+            verb={this.props.verb} 
+            item={this.props.item}
+            changeMessage={this.props.changeMessage}
+            interactions={this.props.interactions} 
+            interactStates={this.props.interactStates}
+          />.  The gate blocking the exit has lifted.  In the corner is a <Stairs 
             room={this.props.room}
             changeMessage={this.props.changeMessage}
             changeRoom={this.props.changeRoom} 
@@ -33,7 +39,17 @@ class Room3 extends React.Component {
     } else if (this.props.interactStates.keyBoxOpen) {
       return(
         <div>
-          You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is a metal box with a Hello Kitty keychain inside.  There is a metal <Gate 
+          You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is a metal <Box 
+            verb={this.props.verb} 
+            item={this.props.item}
+            changeMessage={this.props.changeMessage}
+            interactions={this.props.interactions} 
+            interactStates={this.props.interactStates}
+          /> with a Hello Kitty <Keychain 
+            verb={this.props.verb}
+            changeMessage={this.props.changeMessage}
+            interactions={this.props.interactions}
+          /> inside.  There is a metal <Gate 
             verb={this.props.verb} 
             changeMessage={this.props.changeMessage}
           /> blocking the exit.  Next to the gate is a <CardReader 
