@@ -23,7 +23,6 @@ class Room3 extends React.Component {
             item={this.props.item}
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions} 
-            interactStates={this.props.interactStates}
           />.  In the corner is a <Stairs 
             room={this.props.room}
             changeMessage={this.props.changeMessage}
@@ -42,7 +41,6 @@ class Room3 extends React.Component {
             item={this.props.item}
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions} 
-            interactStates={this.props.interactStates}
           />.  In the corner is a <Stairs 
             room={this.props.room}
             changeMessage={this.props.changeMessage}
@@ -67,7 +65,6 @@ class Room3 extends React.Component {
             item={this.props.item}
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions} 
-            interactStates={this.props.interactStates}
           />.  In the corner is a <Stairs 
             room={this.props.room}
             changeMessage={this.props.changeMessage}
