@@ -40,8 +40,8 @@ class Box extends React.Component {
           newMessage = "You can't pick that up";
         } else if (verb === "use" && item === "Crowbar") {
           newMessage = "You jam the crowbar under the edge of the lid and push.  With a snap, the lid flies open revealing several small hooks arranged in rows.  All of the hook are emtpy, except for one which has a Hello Kitty keychain hanging from it."
-          this.interactions.keyBoxOpen();
-          this.interactions.dropItem(droppedItem);
+          this.props.interactions.keyBoxOpen();
+          this.props.interactions.dropItem(droppedItem);
         } else if (verb === "use") {
           newMessage = "You can't pry it open with your hands";
         }
