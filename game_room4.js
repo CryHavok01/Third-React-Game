@@ -84,7 +84,11 @@ class Room4 extends React.Component {
             changeMessage={this.props.changeMessage}
             interactions={this.props.interactions}
             interactStates={this.props.interactStates}
-          />.  Inside are a variety of tools including a crowbar.  The only exit is the <Stairs 
+          />.  Inside are a variety of tools including a <Crowbar 
+            verb={this.props.verb}
+            interactions={this.props.interactions}
+            changeMessage={this.props.changeMessage}
+          />.  The only exit is the <Stairs 
             room={this.props.room}
             changeMessage={this.props.changeMessage}
             changeRoom={this.props.changeRoom} 
