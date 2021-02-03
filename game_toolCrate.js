@@ -40,6 +40,7 @@ class Crate extends React.Component {
             newMessage = "With some effort, you swing the lid open.  Inside the crate are a few shovels, a bag of rock salt, various tools, and one crowbar.";
             this.props.interactions.toolCrateOpen();
         }
+      }
       this.props.changeMessage(newMessage);
   }
   
