@@ -22,7 +22,7 @@ class Room3 extends React.Component {
           /> leading up.
         </div>
       )
-    } else if (this.props.interactStates.keyBoxOpen && this.props.inventory.includes("Car Key")) {
+    } else if (this.props.interactStates.keyBoxOpen && (this.props.inventory.includes("Car Key") || this.props.interactStates.carDoorOpen)) {
       return(
         <div>
           You are in a parking garage.  There are a few parked cars scattered around.  Attached to the wall is an empty metal <Box 
