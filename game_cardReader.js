@@ -9,6 +9,7 @@ class CardReader extends React.Component {
   handleClick() {
       let verb = this.props.verb;
       let newMessage = "";
+      let item = this.props.item;
       let droppedItem = "ID Card";
       if (verb === "push") {
         newMessage = "It's cemented to the ground";    
