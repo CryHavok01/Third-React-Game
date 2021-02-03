@@ -2,7 +2,7 @@
 
 class Room4 extends React.Component {
   render() {
-    if (this.props.interactStates.carDoorOpen && this.props.inventory.includes("ID Card")) {
+    if (this.props.interactStates.carDoorOpen && (this.props.inventory.includes("ID Card") || this.props.interactStates.garageGateOpen)) {
       return(
         <div>
           You are on the roof of the parking garage.  There is a cop car parked diagonally across three spaces with its door wide open.  Against the far railing is an open tool <Crate 
@@ -45,7 +45,7 @@ class Room4 extends React.Component {
           /> leading back down.
         </div>
       )
-    } else if (this.props.interactStates.toolCrateOpen && this.props.inventory.includes("Crowbar")) {
+    } else if (this.props.interactStates.toolCrateOpen && (this.props.inventory.includes("Crowbar") || this.props.interactStates.keyBoxOpen)) {
       return(
         <div>
           You are on the roof of the parking garage.  There is a <CopCar 
