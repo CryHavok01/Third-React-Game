@@ -11,7 +11,7 @@ class Box extends React.Component {
       let newMessage = "";
       let item = this.props.item;
       let droppedItem = "Crowbar";
-      if (this.props.inventory.includes("Car Key")) {
+      if (this.props.inventory.includes("Car Key") || this.props.interactStates.carDoorOpen) {
         if (verb === "push") {
           newMessage = "It won't move";    
         } else if (verb === "look") {
