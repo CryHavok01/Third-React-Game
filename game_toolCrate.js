@@ -9,7 +9,7 @@ class Crate extends React.Component {
   handleClick() {
       let verb = this.props.verb;
       let newMessage = "";
-      if (this.props.inventory.includes("Crowbar")) {
+      if (this.props.interactStates.keyBoxOpen || this.props.inventory.includes("Crowbar")) {
         if (verb === "push") {
           newMessage = "The crate is too heavy to move";    
         } else if (verb === "look") {
