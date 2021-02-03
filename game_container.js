@@ -93,7 +93,10 @@ class Container extends React.Component {
           interactStates: {
             buttonRevealed: false,
             buttonPressed: false,
-          },
+            keyBoxOpen: false,
+            toolCrateOpen: false,
+            carDoorOpen: false,
+            garageGateOpen: false          },
           room: "start",
           inventory: []
       })
