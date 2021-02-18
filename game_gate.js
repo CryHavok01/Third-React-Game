@@ -23,11 +23,9 @@ class Gate extends React.Component {
   
   render() {
       return(
-        <div>
             <button onClick={this.handleClick}>
-            Gate
+             Gate
             </button>
-        </div>
     )
   }
 }
