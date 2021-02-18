@@ -51,11 +51,9 @@ class CopCar extends React.Component {
   
   render() {
       return(
-        <div>
             <button onClick={this.handleClick}>
               Cop Car
             </button>
-        </div>
     )
   }
 }
