@@ -25,11 +25,9 @@ class Key extends React.Component {
   
   render() {
       return(
-        <div>
             <button onClick={this.handleClick}>
                 Key
             </button>
-        </div>
     )
   }
 }
