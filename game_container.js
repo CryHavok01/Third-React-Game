@@ -6,53 +6,53 @@ class Container extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        verb: null,
-        item: null,
-        displayMessage: null,
-        inventory: [],
-        interactStates: {
-            buttonRevealed: false,
-            buttonPressed: false,
-            keyBoxOpen: false,
-            toolCrateOpen: false,
-            carDoorOpen: false,
-            garageGateOpen: false
-        },
-        room: "start"
+      verb: null,
+      item: null,
+      displayMessage: null,
+      inventory: [],
+      interactStates: {
+        buttonRevealed: false,
+        buttonPressed: false,
+        keyBoxOpen: false,
+        toolCrateOpen: false,
+        carDoorOpen: false,
+        garageGateOpen: false
+      },
+      room: "start"
     };
-    
+
     this.interactions = {
-        pickUp: (newItem) => {
-            let newInventory = this.state.inventory;
-            newInventory.push(newItem);
-            this.setState({inventory: newInventory});
-        },
-        dropItem: (droppedItem) => {
-            let newInventory = this.state.inventory;
-            let index = newInventory.indexOf(droppedItem);
-            newInventory.splice(index, 1);
-            this.setState({inventory: newInventory});
-        },
-        buttonReveal: () => {
-            this.setState({interactStates: {...this.state.interactStates, buttonRevealed: true}});
-        },
-        buttonPress: () => {
-            this.setState({interactStates: {...this.state.interactStates, buttonPressed: true}});
-        },
-        keyBoxOpen: () => {
-            this.setState({interactStates: {...this.state.interactStates, keyBoxOpen: true}});
-        },
-        toolCrateOpen: () => {
-            this.setState({interactStates: {...this.state.interactStates, toolCrateOpen: true}});
-        },
-        carDoorOpen: () => {
-            this.setState({interactStates: {...this.state.interactStates, carDoorOpen: true}});
-        },
-        garageGateOpen: () => {
-            this.setState({interactStates: {...this.state.interactStates, garageGateOpen: true}});
-        },
+      pickUp: (newItem) => {
+        let newInventory = this.state.inventory;
+        newInventory.push(newItem);
+        this.setState({ inventory: newInventory });
+      },
+      dropItem: (droppedItem) => {
+        let newInventory = this.state.inventory;
+        let index = newInventory.indexOf(droppedItem);
+        newInventory.splice(index, 1);
+        this.setState({ inventory: newInventory });
+      },
+      buttonReveal: () => {
+        this.setState({ interactStates: { ...this.state.interactStates, buttonRevealed: true } });
+      },
+      buttonPress: () => {
+        this.setState({ interactStates: { ...this.state.interactStates, buttonPressed: true } });
+      },
+      keyBoxOpen: () => {
+        this.setState({ interactStates: { ...this.state.interactStates, keyBoxOpen: true } });
+      },
+      toolCrateOpen: () => {
+        this.setState({ interactStates: { ...this.state.interactStates, toolCrateOpen: true } });
+      },
+      carDoorOpen: () => {
+        this.setState({ interactStates: { ...this.state.interactStates, carDoorOpen: true } });
+      },
+      garageGateOpen: () => {
+        this.setState({ interactStates: { ...this.state.interactStates, garageGateOpen: true } });
+      },
     };
-    
+
     this.changeVerb = this.changeVerb.bind(this);
     this.changeItem = this.changeItem.bind(this);
     this.changeDisplayMessage = this.changeDisplayMessage.bind(this);
@@ -68,64 +68,77 @@ class Container extends React.Component {
   }
 
   changeVerb(newVerb) {
-    this.setState({verb: newVerb});
+    this.setState({ verb: newVerb });
   }
 
-    changeItem(newItem) {
-        this.setState({item: newItem});
-    }
-    
-   changeDisplayMessage(newMessage) {
-    this.setState({displayMessage: newMessage});
+  changeItem(newItem) {
+    this.setState({ item: newItem });
   }
-  
 
-  
+  changeDisplayMessage(newMessage) {
+    this.setState({ displayMessage: newMessage });
+  }
+
+
+
   changeRoom(newRoom) {
-      this.setState({room: newRoom});
+    this.setState({ room: newRoom });
   }
-  
+
   reset() {
-      this.setState({
-          verb: null,
-          item: null,
-          displayMessage: null,
-          interactStates: {
-            buttonRevealed: false,
-            buttonPressed: false,
-            keyBoxOpen: false,
-            toolCrateOpen: false,
-            carDoorOpen: false,
-            garageGateOpen: false          },
-          room: "start",
-          inventory: []
-      })
+    this.setState({
+      verb: null,
+      item: null,
+      displayMessage: null,
+      interactStates: {
+        buttonRevealed: false,
+        buttonPressed: false,
+        keyBoxOpen: false,
+        toolCrateOpen: false,
+        carDoorOpen: false,
+        garageGateOpen: false
+      },
+      room: "start",
+      inventory: []
+    })
   }
   render() {
-    
+
     return (
       <div>
-        <Window 
-            verb={this.state.verb} 
-            item={this.state.item}
-            room={this.state.room}
-            changeMessage={this.changeDisplayMessage}
-            changeRoom={this.changeRoom}
-            reset={this.reset}
-            inventory={this.state.inventory}
-            interactions={this.interactions}
-            interactStates={this.state.interactStates}
-        />
-        <Display message={this.state.displayMessage} />
-        <Buttons verb={this.state.verb} onClick={this.changeVerb} />
-        <Inventory
-          inventory={this.state.inventory} 
-          verb={this.state.verb} 
-          changeItem={this.changeItem} 
-          changeMessage={this.changeDisplayMessage}
-        />
-        <p>{this.state.verb}</p>
-        <p>{this.state.item}</p>
+        <div class="row">
+          <div class="col">
+            <Window
+              verb={this.state.verb}
+              item={this.state.item}
+              room={this.state.room}
+              changeMessage={this.changeDisplayMessage}
+              changeRoom={this.changeRoom}
+              reset={this.reset}
+              inventory={this.state.inventory}
+              interactions={this.interactions}
+              interactStates={this.state.interactStates}
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <Display message={this.state.displayMessage} />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <Buttons verb={this.state.verb} onClick={this.changeVerb} />
+          </div>
+          <div class="col">
+            <Inventory
+              inventory={this.state.inventory}
+              verb={this.state.verb}
+              changeItem={this.changeItem}
+              changeMessage={this.changeDisplayMessage}
+            />
+          </div>
+        </div>
       </div>
     );
   }
