@@ -25,11 +25,9 @@ class Crowbar extends React.Component {
   
   render() {
       return(
-        <div>
             <button onClick={this.handleClick}>
               Crowbar
             </button>
-        </div>
     )
   }
 }
