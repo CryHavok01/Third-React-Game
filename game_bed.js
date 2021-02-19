@@ -23,9 +23,11 @@ class Bed extends React.Component {
   
   render() {
       return(
-            <button onClick={this.handleClick}>
+        <div>
+            <button type="button" className="btn btn-secondary" onClick={this.handleClick}>
               Bed
             </button>
+        </div>
     )
   }
 }

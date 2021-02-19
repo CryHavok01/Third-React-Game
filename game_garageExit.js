@@ -16,7 +16,7 @@ class GarageExit extends React.Component {
   
   render() {
       return(
-            <button onClick={this.handleClick}>
+            <button type="button" className="btn btn-secondary" onClick={this.handleClick}>
                 Exit
             </button>
       )

@@ -29,9 +29,11 @@ class CardReader extends React.Component {
   
   render() {
       return(
-            <button onClick={this.handleClick}>
+        <div>
+            <button type="button" className="btn btn-secondary" onClick={this.handleClick}>
               Card Reader
             </button>
+        </div>
     )
   }
 }

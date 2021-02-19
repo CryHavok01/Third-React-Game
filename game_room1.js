@@ -55,7 +55,6 @@ class Room1 extends React.Component {
       } else {
           return(
             <div>
-              <p>
                 You wake up inside a small room.  There is one thick metal <Door
                     verb={this.props.verb} 
                     changeMessage={this.props.changeMessage} 
@@ -71,7 +70,6 @@ class Room1 extends React.Component {
                     changeMessage={this.props.changeMessage} 
                     interactStates={this.props.interactStates}
                 />.
-              </p>
             </div>
         )
       }

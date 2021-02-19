@@ -51,9 +51,11 @@ class Box extends React.Component {
   
   render() {
       return(
-            <button onClick={this.handleClick}>
+        <div>
+            <button type="button" className="btn btn-secondary" onClick={this.handleClick}>
               Box
             </button>
+        </div>
     )
   }
 }
