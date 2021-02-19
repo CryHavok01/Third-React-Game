@@ -1,0 +1,13 @@
+.game-container {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.game-window {
+    border: 2px dotted blue;
+    padding: 5px;
+}
+
+.display-box {
+    border: 1px solid black;
+}
