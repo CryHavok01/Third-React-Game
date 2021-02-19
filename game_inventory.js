@@ -21,7 +21,7 @@ class Inventory extends React.Component {
         return(
             <div className="Inventory">
                 {this.props.inventory.map((item, index) => 
-                    <button value={item} key={index} onClick={this.handleClick}>
+                    <button type="button" className="btn btn-info" value={item} key={index} onClick={this.handleClick}>
                         {item}
                     </button>)}
             </div>
