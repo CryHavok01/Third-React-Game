@@ -14,16 +14,16 @@ class Buttons extends React.Component {
   render() {
       return(
         <div className="buttons">
-            <button value='push' onClick={this.handleClick}>
+            <button type="button" className="btn btn-primary" value='push' onClick={this.handleClick}>
                 Push
             </button>
-            <button value='look' onClick={this.handleClick}>
+            <button  type="button" className="btn btn-primary"value='look' onClick={this.handleClick}>
                 Look At
             </button>
-            <button value='pickUp' onClick={this.handleClick}>
+            <button  type="button" className="btn btn-primary"value='pickUp' onClick={this.handleClick}>
                 Pick Up
             </button>
-            <button value='use' onClick={this.handleClick}>
+            <button  type="button" className="btn btn-primary"value='use' onClick={this.handleClick}>
                 Use
             </button>
         </div>
