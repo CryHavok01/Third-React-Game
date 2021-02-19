@@ -11,3 +11,7 @@
 .display-box {
     border: 1px solid black;
 }
+
+.verb-button {
+    margin: 2px;
+}
