@@ -7,7 +7,7 @@ h2 {
 }
 
 p {
-    color: #D3F3EE;
+    color: #7FB7BE;
 }
 
 .game-container {
@@ -17,7 +17,7 @@ p {
 }
 
 .game-window {
-    border: 2px dotted blue;
+    border: 2px solid black;
     padding: 5px;
     background-color: #BC2C1A;
     color: #D3F3EE
