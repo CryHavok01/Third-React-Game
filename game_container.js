@@ -107,7 +107,7 @@ class Container extends React.Component {
     return (
       <div>
         <div className="row" style={{margin: "auto"}}>
-          <div className="col game-window">
+          <div className="col my-auto game-window">
             <Window
               verb={this.state.verb}
               item={this.state.item}
