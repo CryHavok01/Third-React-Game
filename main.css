@@ -26,11 +26,11 @@ p {
 .display-box {
     border: 1px solid black;
     background-color: #DACC3E;
+    text-align: center;
 }
 .display-box p {
     color: #7A3B69;
     font-size: 110%;
-    text-align: center;
 }
 
 .verb-button {
