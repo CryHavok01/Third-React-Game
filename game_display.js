@@ -8,7 +8,7 @@ class Display extends React.Component {
 
   render() {
       return(
-        <div className="display">
+        <div className="d-flex align-items-center">
             <p>{this.props.message}</p>
         </div>
     )
