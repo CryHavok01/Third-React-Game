@@ -8,9 +8,9 @@ class Display extends React.Component {
 
   render() {
       return(
-        <p className="display">
-          {this.props.message}
-        </p>
+        <div className="display">
+          <p>{this.props.message}</p>
+        </div>
     )
   }
 }

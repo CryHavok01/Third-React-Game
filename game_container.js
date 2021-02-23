@@ -122,7 +122,7 @@ class Container extends React.Component {
           </div>
         </div>
         <div className="row" style={{margin: "auto"}}>
-          <div className="col rounded align-self-center display-box">
+          <div className="col rounded display-box">
             <Display message={this.state.displayMessage} />
           </div>
         </div>
