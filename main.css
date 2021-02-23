@@ -13,6 +13,7 @@ p {
 .game-container {
     border: 1px solid black;
     padding: 5px;
+    background-color: #563440;
 }
 
 .game-window {
@@ -31,5 +32,9 @@ p {
 }
 
 .verb-button {
+    margin: 2px;
+}
+
+.inv-button {
     margin: 2px;
 }

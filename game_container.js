@@ -122,7 +122,7 @@ class Container extends React.Component {
           </div>
         </div>
         <div className="row" style={{margin: "auto"}}>
-          <div className="col display-box my-auto">
+          <div className="col display-box">
             <Display message={this.state.displayMessage} />
           </div>
         </div>
