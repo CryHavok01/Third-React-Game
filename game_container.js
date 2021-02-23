@@ -107,7 +107,7 @@ class Container extends React.Component {
     return (
       <div>
         <div className="row" style={{margin: "auto"}}>
-          <div className="col my-auto game-window">
+          <div className="col my-auto rounded game-window">
             <Window
               verb={this.state.verb}
               item={this.state.item}
@@ -122,15 +122,15 @@ class Container extends React.Component {
           </div>
         </div>
         <div className="row" style={{margin: "auto"}}>
-          <div className="col display-box">
+          <div className="col rounded display-box">
             <Display message={this.state.displayMessage} />
           </div>
         </div>
         <div className="row" style={{margin: "auto"}}>
-          <div className="col verbs-box">
+          <div className="col rounded verbs-box">
             <Buttons verb={this.state.verb} onClick={this.changeVerb} />
           </div>
-          <div className="col inv-box">
+          <div className="col rounded inv-box">
             <Inventory
               inventory={this.state.inventory}
               verb={this.state.verb}
