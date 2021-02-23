@@ -24,6 +24,8 @@ p {
 
 .display-box {
     border: 1px solid black;
+    background-color: #DACC3E;
+    color: #7A3B69;
 }
 
 .verb-button {
