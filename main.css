@@ -18,6 +18,8 @@ p {
 .game-window {
     border: 2px dotted blue;
     padding: 5px;
+    background-color: #BC2C1A;
+    color: #D3F3EE
 }
 
 .display-box {
