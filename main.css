@@ -1,9 +1,13 @@
 body {
-    background-color: #7d1538
+    background-color: #7d1538;
 }
 
 h2 {
-    color: #7FB7BE
+    color: #7FB7BE;
+}
+
+p {
+    color: #D3F3EE;
 }
 
 .game-container {
