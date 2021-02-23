@@ -25,6 +25,8 @@ p {
 .display-box {
     border: 1px solid black;
     background-color: #DACC3E;
+}
+.display-box p {
     color: #7A3B69;
 }
 
