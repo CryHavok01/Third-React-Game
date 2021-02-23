@@ -8,7 +8,7 @@ class Display extends React.Component {
 
   render() {
       return(
-        <div className="display">
+        <div className="display my-auto">
             <p>{this.props.message}</p>
         </div>
     )
