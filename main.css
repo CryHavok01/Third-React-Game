@@ -31,12 +31,13 @@ p {
 .display {
     position: relative;
     top:50%;
+    transform: translateY(-50%);
 }
 
 .display p {
     color: #7A3B69;
     font-size: 110%;
-    vertical-align: middle;
+    text-align: center;
 }
 
 .verb-button {
